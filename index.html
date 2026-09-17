@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Super Mario GBC</title>
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; background: #000; }
+        #game-container { width: 100vw; height: 100vh; }
+    </style>
+</head>
+<body>
+    <div id="game-container"></div>
+    <script>
+        window.EJS_player = '#game-container';
+        window.EJS_core = 'gbc'; 
+        window.EJS_gameUrl = 'juego.gbc'; 
+        window.EJS_pathtodata = 'https://raw.githack.com/EmulatorJS/EmulatorJS/main/data/';
+    </script>
+    <script src="https://raw.githack.com/EmulatorJS/EmulatorJS/main/data/loader.js"></script>
+</body>
+</html>
